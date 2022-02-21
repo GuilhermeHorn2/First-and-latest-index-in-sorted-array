@@ -1,0 +1,46 @@
+#include <iostream>
+#include <cmath>
+//
+
+//
+using namespace std;
+
+
+
+int main(){
+    /*\n*/
+    int n;
+    scanf("%d",&n);
+    int *l = new int[n];
+    for(int i = 0;i < n;i++){
+        scanf("%d",&l[i]);
+    }
+    int t;
+    scanf("%d",&t);
+    //
+    int a = -1;
+    int b = -1;
+    for(int i = 0;i < n;i++){
+        if(l[i] == t){
+            a = i;
+            break;
+        }
+    }
+    for(int j = n-1;j >=0 ;j--){
+        if(l[j] == t){
+            b = j;
+            break;
+        }
+    }
+    printf("[%d,%d]",a,b);
+
+
+
+
+
+
+
+
+return 0;
+
+}
